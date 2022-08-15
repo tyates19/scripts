@@ -58,7 +58,7 @@ Get-NetAdapter | Select-Object @{Name = "Interface"; Expression = {$_.Name}},Mac
 
 Echo "------END------" >> .\_$asset.txt
 
-Pause
+sleep 10
 
 $asset = $null
 
