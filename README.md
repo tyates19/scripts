@@ -1,1 +1,1 @@
-# Various Windows System Scripts
+# Various scripts
