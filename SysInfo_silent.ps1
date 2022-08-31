@@ -7,7 +7,8 @@ Enter Asset'
     if ( [string]::IsNullOrEmpty($asset) ) {
         Echo "
         Uh-oh...blank input not allowed"
-    } else {
+    }
+    else {
         break
     }
 }
