@@ -41,7 +41,7 @@ $asset
 Echo "System Info
 ----------" >> .\_$asset.txt
 
-$systemInfo_obj | Format-List -Property Manufacturer,Model,Hostname,OS,Version,Serial,ProductKey,CurrentUser,Domain >> .\_$asset.txt
+$systemInfo_obj | Format-List -Property Manufacturer,Model,Hostname,OS,Version,Serial,CurrentUser,Domain >> .\_$asset.txt
 
 Get-NetIPConfiguration | Select-Object @{Name = "Interface"; Expression = {$_.InterfaceAlias}},IPv4Address | Sort Interface | Format-Table >> .\_$asset.txt
 
