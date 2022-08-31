@@ -35,7 +35,7 @@ Echo "
 System Info
 ----------"
 
-$systemInfo_obj | Format-List -Property Manufacturer,Model,Hostname,OS,Version,Serial,ProductKey,CurrentUser,Domain
+$systemInfo_obj | Format-List -Property Manufacturer,Model,Hostname,OS,Version,Serial,CurrentUser,Domain
 
 Get-NetIPConfiguration | Select-Object @{Name = "Interface"; Expression = {$_.InterfaceAlias}},IPv4Address | Sort Interface | Format-Table
 
